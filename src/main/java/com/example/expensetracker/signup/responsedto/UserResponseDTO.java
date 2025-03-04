@@ -1,8 +1,6 @@
 package com.example.expensetracker.signup.responsedto;
 
-// import com.fasterxml.jackson.annotation.JsonInclude;
 
-// @JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserResponseDTO {
 
     private String username;
@@ -14,6 +12,7 @@ public class UserResponseDTO {
         this.email = email;
         this.password = password;
     }
+
 
     public String getUsername() {
         return username;
