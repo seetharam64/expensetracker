@@ -20,16 +20,6 @@ public class UserService {
     @Autowired
     BCryptPasswordEncoder passwordEncoder;
 
-   /* public ResponseEntity<String> registerUser(UserRequestDTO user){
-        User userentity = new User();
-        userentity.setUsername(user.getUsername());
-        userentity.setEmail(user.getEmail());
-        String hasedPassword = passwordEncoder.encode(user.getPassword());
-        userentity.setPassword(hasedPassword);
-        userRepository.save(userentity);
-        return ResponseEntity.status(HttpStatus.CREATED).body("User account created succesfully!");
-    }*/
-
     public ResponseEntity<String> duplicateUserMsg(UserRequestDTO userinfo){
         User userentity = new User();
         Optional<User> exiusr = userRepository.findByUsername(userinfo.getUsername());

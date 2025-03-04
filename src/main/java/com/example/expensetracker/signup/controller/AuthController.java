@@ -16,10 +16,6 @@ public class AuthController {
     @Autowired
     UserService userService;
 
-   /* @PostMapping("/register")
-    public ResponseEntity<String> createUser(@RequestBody UserRequestDTO user){
-        return userService.registerUser(user);
-    }*/
 
     @PostMapping("/registeruser")
     public ResponseEntity<String> createUser(@RequestBody UserRequestDTO user){

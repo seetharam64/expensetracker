@@ -1,8 +1,8 @@
 package com.example.expensetracker.signup.responsedto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
+// import com.fasterxml.jackson.annotation.JsonInclude;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
+// @JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserResponseDTO {
 
     private String username;
